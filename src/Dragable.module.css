@@ -1,0 +1,30 @@
+
+.mydivheader {
+  display: none;
+  padding: 10px;
+  cursor: move;
+  z-index: 300;
+  background: rgba(255, 255, 255, 0.26);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.2px);
+  -webkit-backdrop-filter: blur(7.2px);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+}
+
+.navList{
+  position: relative;
+  right: 18px;
+}
+.navList li{
+  padding: 5px;
+}
+.navList li a{
+  color: var(--black)
+}
+
+@media (max-width: 968px) {
+  .mydivheader{
+    display: block;
+  }
+}

@@ -1,0 +1,274 @@
+.blueBox {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  background: linear-gradient(178deg, #0b8de3, #f7f9fb);
+  background-size: 400% 400%;
+  -webkit-animation: blueBox 22s ease infinite;
+  -moz-animation: blueBox 22s ease infinite;
+  animation: blueBox 22s ease infinite;
+}
+
+@-webkit-keyframes blueBox {
+  0% {
+    background-position: 56% 0%
+  }
+
+  50% {
+    background-position: 45% 100%
+  }
+
+  100% {
+    background-position: 56% 0%
+  }
+}
+
+@-moz-keyframes blueBox {
+  0% {
+    background-position: 56% 0%
+  }
+
+  50% {
+    background-position: 45% 100%
+  }
+
+  100% {
+    background-position: 56% 0%
+  }
+}
+
+@keyframes blueBox {
+  0% {
+    background-position: 56% 0%
+  }
+
+  50% {
+    background-position: 45% 100%
+  }
+
+  100% {
+    background-position: 56% 0%
+  }
+}
+
+.container{
+  position: relative;
+}
+
+.textheading{
+  font-family: var(--font2);
+  font-size: 1.2rem;
+  padding: 5px;
+  position: absolute;
+  top: 15px;
+  left: 25px;
+  background: rgb(80, 146, 218);
+  background: radial-gradient(circle, rgb(240, 241, 242) 0%, rgba(250, 250, 250, 0.583)50%, rgba(249, 249, 249, 0.083)100%);
+}
+
+.containercard {
+  position: relative;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr ;
+  grid-gap: 20px; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  min-height: 350px;
+}
+
+.samplesGrid .mac {
+  position: relative;
+  top: 0%;
+  width: 385px;
+  height: 312px;
+  z-index: 3;
+}
+
+.samplesGrid .mac .links{
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  top: 15px;/*25px*/
+  left: 15px;/*25px*/
+  width: 355px;/*555px*/
+  height: 198px;/*313px*/
+  color: white;
+  opacity: 0;
+}
+
+.samplesGrid .mac .links:hover{
+  background-color: var(--blue);
+  cursor: pointer;
+  color: white;
+  opacity: 1;
+}
+
+.samplesGrid .mac img {
+  width: 385px;
+}
+
+.samplesGrid .mac .imgBx{
+  position: absolute;
+  top: 15px;/*25px*/
+  left: 15px;/*25px*/
+  width: 355px;/*555px*/
+  height: 198px;/*313px*/
+  transition: 5s linear;
+}
+
+
+.samplesGrid .mac .img1{
+  background: url(./../assets/localhost_4200_home.png);
+  background-position: top;
+  background-size: 100%;
+  -webkit-animation: blueBox 42s ease infinite;
+  -moz-animation: blueBox 42s ease infinite;
+  animation: blueBox 42s ease infinite;
+}
+
+.samplesGrid .mac .img2{
+  background: url(./../assets/localhost_4200_sinhalaTyping.png);
+  background-position: top;
+  background-size: 100%;
+  -webkit-animation: blueBox 25s ease infinite;
+  -moz-animation: blueBox 25s ease infinite;
+  animation: blueBox 25s ease infinite;
+}
+
+.samplesGrid .mac .img3{
+  background: url(./../assets/localhost_4200_cart.png);
+  background-position: top;
+  background-size: 100%;
+  -webkit-animation: blueBox 12s ease infinite;
+  -moz-animation: blueBox 12s ease infinite;
+  animation: blueBox 12s ease infinite;
+}
+
+@media (max-width: 1148px) {
+  .samplesGrid .mac img {
+    display: none;
+  }
+}
+
+
+/* .item {
+  background: #0234FF;
+  height: 400px;
+  width: 250px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  padding: 30px;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.card {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 15px;
+  -webkit-transition: var(--dur);
+  -moz-transition: var(--dur);
+  -ms-transition: var(--dur);
+  -o-transition: var(--dur);
+  transition: var(--dur);
+  clip-path: circle(100.0% at 50% 50%);
+}
+
+.card img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  max-width: 9999px;
+  overflow: hidden;
+  border-radius: 15px;
+  -webkit-transition: var(--dur);
+  -moz-transition: var(--dur);
+  -ms-transition: var(--dur);
+  -o-transition: var(--dur);
+  transition: var(--dur);
+  clip-path: circle(100.0% at 50% 50%);
+}
+
+.item:hover .card img {
+  clip-path: circle(0.0% at 50% 50%);
+}
+
+.circle {
+  background: #1101E8;
+  max-width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  -webkit-transition: var(--dur-a);
+  -moz-transition: var(--dur-a);
+  -ms-transition: var(--dur-a);
+  -o-transition: var(--dur-a);
+  transition: var(--dur-a);
+  clip-path: circle(100.0% at 50% 50%);
+}
+
+.circle2 {
+  background: #8E01E8;
+  -webkit-transition: var(--dur-b);
+  -moz-transition: var(--dur-b);
+  -ms-transition: var(--dur-b);
+  -o-transition: var(--dur-b);
+  transition: var(--dur-b);
+  clip-path: circle(100.0% at 50% 50%);
+}
+
+.item:hover .card img {
+  clip-path: circle(0.0% at 50% 50%);
+}
+
+.item:hover .card .circle {
+  clip-path: circle(0.0% at 75% 60%);
+}
+
+.item:hover .card .circle2 {
+  clip-path: circle(0.0% at 35% 20%);
+}
+
+.card img {
+  max-width: 100%;
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.content {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  height: 100%;
+} */

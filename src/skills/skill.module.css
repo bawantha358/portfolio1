@@ -1,0 +1,224 @@
+
+.container{
+    padding: 50px 20px;
+	position: relative;
+}
+
+.blueBox {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background: linear-gradient(178deg, #0b8de3, #f7f9fb);
+    background-size: 400% 400%;
+    -webkit-animation: blueBox 22s ease infinite;
+    -moz-animation: blueBox 22s ease infinite;
+    animation: blueBox 22s ease infinite;
+    
+}
+
+@-webkit-keyframes blueBox {
+    0%{background-position:56% 0%}
+    50%{background-position:45% 100%}
+    100%{background-position:56% 0%}
+}
+@-moz-keyframes blueBox {
+    0%{background-position:56% 0%}
+    50%{background-position:45% 100%}
+    100%{background-position:56% 0%}
+}
+@keyframes blueBox {
+    0%{background-position:56% 0%}
+    50%{background-position:45% 100%}
+    100%{background-position:56% 0%}
+}
+
+
+/* skill bars */
+.container .flexdiv{
+    display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .flexdiv .para{
+    font-family: var(--font2);
+    color: var(--black);
+    font-size: var(--fontsz0);
+	line-height: 1.8rem;
+    width: 50%;
+    text-align: justify;
+    color: var(--black);
+	margin-right: 35px;
+}
+
+li{ /*style the li tag*/
+	list-style-type: none;
+	font-family: sans-serif;
+}
+
+
+.skills{ /*style the text*/
+	width: 350px;
+	margin: 60px auto ;
+	color: #000;
+}
+
+.skills h3{
+    font-family: var(--font2);
+    font-size: var(--fontsz0);
+    text-align: left;
+}
+.skills li{ /*set margin of li*/
+	margin: 20px 0;
+}
+
+.bar{ /*style the bar*/
+	background-color: #353b48;
+	display: block;
+	height: 4px;
+	border-radius: 3px;
+	overflow: hidden;
+	box-shadow: 0 0 10px #449ceeb3;
+}
+
+.bar span{ /*style the span tag*/
+	height: 4px;
+	float: left;
+}
+
+.angular{ /*set skills and animation of html*/
+	width: 80%;
+	animation: angular 2s;
+	background-color: var(--blue);
+}
+
+.springboot{ /*set skills and animation of css*/
+	width: 73%;
+	animation: springboot 2s;
+	background-color: var(--blue);
+}
+
+.react{ /*set skills and animation of javascript*/
+	width: 70%;
+	animation: react 2s;
+	background-color: var(--blue);
+}
+
+.nextjs{ /*set skills and animation of jquery*/
+	width: 50%;
+	animation: nextjs 2s;
+	background-color: var(--blue);
+}
+
+.expressjs{
+	width: 60%;
+	animation: nextjs 2s;
+	background-color: var(--blue);
+}
+
+.php{
+	width: 50%;
+	animation: nextjs 2s;
+	background-color: var(--blue);
+}
+
+.mongoDB{
+	width: 45%;
+	animation: react 2s;
+	background-color: var(--blue);
+}
+
+.sql{
+	width: 60%;
+	animation: nextjs 2s;
+	background-color: var(--blue);
+}
+
+.sinhalatyping{
+	width: 90%;
+	animation: nextjs 2s;
+	background-color: var(--blue);
+}
+
+.photoshop{
+	width: 60%;
+	animation: nextjs 2s;
+	background-color: var(--blue);
+}
+
+@keyframes angular{ /*animate html skills*/
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 80%;
+	}
+}
+
+@keyframes springboot{ /*animate css skills*/
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 93%;
+	}
+}
+
+@keyframes react{ /*animate javascript skills*/
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 70%;
+	}
+}
+
+@keyframes nextjs{ /*animate jquery skills*/
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 60%;
+	}
+}
+
+.textheading{
+    font-family: var(--font2);
+    font-size: var(--fontsz1);
+    padding: 5px;
+    position: absolute;
+    top: 65px;
+    left: 35px;
+    background: rgb(80, 146, 218);
+    background: radial-gradient(circle, rgb(240, 241, 242) 0%, rgba(250, 250, 250, 0.583)50%, rgba(249, 249, 249, 0.083)100%);
+}
+
+
+@media only screen and (max-width: 1160px) {
+	
+	.container .flexdiv{
+		display: block;
+	}
+	
+	.container .flexdiv .para{
+		width: 100%;
+	}
+
+	.skills{ /*style the text*/
+		width: 100%;
+		margin: 60px auto ;
+	}
+
+}
+
+
+
+
+
+
+

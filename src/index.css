@@ -1,0 +1,31 @@
+:root {
+    /* colors */
+    --black: #0B1215;
+    --blue: #2383e3;
+    --white: #ffffff;
+    --gray: #f0f0f0;
+
+    /* fonts */
+    --font1: "Fira Sans", sans-serif;
+    --font2: "Sora", sans-serif;
+
+    /* font size */
+   --fontsz0: 1.2rem;
+   --fontsz1: 1.4rem;
+   --fontsz2: 2rem;
+   --fontsz3: 3.5rem;
+
+    /* animation */
+    --dur: all 550ms ease-in-out; 
+    --dur-a: all 650ms ease-in-out;
+    --dur-b: all 750ms ease-in-out;
+    
+  }
+
+@font-face { font-family: Fira Sans; src:url('./assets/Fonts/FiraSans-Regular.ttf'); } 
+@font-face { font-family: Sora; src:url('./assets/Fonts/Sora-Regular.ttf'); } 
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}

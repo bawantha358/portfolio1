@@ -1,0 +1,110 @@
+.container{
+    padding: 50px 20px;
+}
+
+.blueBox {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background: linear-gradient(178deg, #0b8de3, #f7f9fb);
+    background-size: 400% 400%;
+    -webkit-animation: blueBox 22s ease infinite;
+    -moz-animation: blueBox 22s ease infinite;
+    animation: blueBox 22s ease infinite;
+    
+}
+
+@-webkit-keyframes blueBox {
+    0%{background-position:56% 0%}
+    50%{background-position:45% 100%}
+    100%{background-position:56% 0%}
+}
+@-moz-keyframes blueBox {
+    0%{background-position:56% 0%}
+    50%{background-position:45% 100%}
+    100%{background-position:56% 0%}
+}
+@keyframes blueBox {
+    0%{background-position:56% 0%}
+    50%{background-position:45% 100%}
+    100%{background-position:56% 0%}
+}
+
+.container .headingItems{
+    padding-left: 50px;
+    text-align: left;
+    display: block;
+}
+
+.container h3 {
+    font-family: var(--font1);
+    text-align: left;
+    font-size: /*55px;*/var(--fontsz3);
+    color: var(--black);
+    display: inline;
+}
+
+.secondItem{
+    /* margin-top: -50px; */
+}
+
+.container .blueText{
+    color: var(--blue);
+}
+
+.container .grayText{
+    color: var(--gray);
+}
+
+.container .number{
+    font-size: /*30px;*/var(--fontsz2);
+    padding: 20px;
+    color: var(--gray);
+}
+
+.container .detail{
+    font-family: var(--font1);
+    font-size: /*22px;*/var(--fontsz1);
+    line-height: 1.8rem;
+    width: 80%;
+    text-align: justify;
+    margin: 10px 0px 0px 125px;
+    color: var(--black);
+}
+
+.container .btnHire{
+    text-align: left;
+    padding: 30px 120px;
+    color: var(--black);
+}
+
+.container .btnHire button{
+    font-size: var(--fontsz0);
+}
+
+@media (max-width: 1148px) {
+    .container .headingItems{
+        padding-left: 10px;
+    }
+    .container h3 {
+        font-size: 35px;
+        display: inline;
+    }
+    .container .detail{
+        font-size: 20px;
+        width: 100%;
+        margin: 10px 0px 0px 10px;
+    }
+    
+    .container .btnHire{
+        padding: 30px 10px;
+    }
+}
+
+@media (max-width: 1148px) {
+    .container{
+        margin-top: -120px;
+    }
+}
+
+/* Responsive */
